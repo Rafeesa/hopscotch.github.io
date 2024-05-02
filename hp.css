@@ -1,0 +1,806 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body
+{
+  width: 100%;
+}
+.navdiv                   /*nav bar div*/
+{
+    background-color: #ed54a4;
+    height: 90px;
+    width: 100%;
+    
+}
+.logo                         /* for adding logo image to the left top*/
+{   float: left;
+    padding:10px 20px;
+    margin-left: 50px;
+   
+}
+.leftmenu
+{                             /*left menu div*/
+    float: left;
+    height: 80px;
+    width: 40%;
+    
+    margin-left: 50px;
+}
+.leftmenu li{
+    display: inline-block; /*display menus in a line*/
+    margin-top: 60px;
+    margin-left: 5px;
+    position: relative;
+    
+}
+.leftmenu li a{             /*styling the menus*/
+   
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    
+
+}
+/*.leftmenu li a:hover
+{
+  text-decoration: underline;
+  
+}*/
+.leftmenu li a:hover::after {
+  content: ""; /* Create pseudo-element for the underline */
+  position: absolute; /* Position the underline absolutely */
+  left: 0;
+  bottom: -10px; /* Adjust the distance from the text */
+  width: 50%; /* Full width of the link */
+  border-bottom: 4px solid white; /* Style of the underline */
+  margin-left: 20px;
+}                                     
+.rightmenu                                /*right menu*/
+{
+    float: right;
+    height: 30px;
+    width: 20%;
+     
+    margin-left: 50px;
+}
+.rightmenu li{                          /*for creating menus at right top*/
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 90px;
+    margin-left: -8px;
+    align-items: center;
+    
+    
+}                                   
+.rightmenu li a{                            /*styling menus*/
+   
+    text-decoration: none;
+    padding: 8px 12px 6px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    
+       float:right;
+       top: 0;
+     
+    
+
+}
+.topicon          /*for adding icons in top right search and cart*/
+{ 
+  display: inline;
+    margin-top: 9px;
+    
+    height: 30px;
+    width: 20%;
+    background-color: aqua;
+    
+    margin-left: 50px;
+   
+}
+.topicon li{
+ 
+  padding: 0;
+  position: relative;
+  top: 34px;
+  right: -501px;
+  float: left;
+  list-style: none;
+}
+    
+
+.topicon li a{
+   font-size: 20px;
+    margin-left: 6px;
+    color: white;
+    margin-right: 20px;
+    padding: 2px;
+    text-decoration: none;
+    
+}
+.summerlookup
+{
+    height: 430px;
+    width: 430px;
+    margin-top: 52px;
+    margin-left: -102px;
+    border-radius: 27px;
+    background-image: url('images/summer lookup.jpg');
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+.grid-container1 {
+    margin-top: 20px;
+    margin-right: 200px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px ;
+    grid-template-rows: 100px 100px;
+    gap: 10px 10px;
+    float: left;
+   
+  }
+  
+ 
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  .shop-by-age
+  {
+    margin-top: 40px;
+    margin-bottom: -18px;
+   
+    align-items: center;
+  }
+   .save-first-order
+   {position: relative;
+    top: -245px;
+    right: -477px;
+    float: left;
+    
+}
+.tweengirl
+{
+    position: relative;
+    top: -112px;
+    right: -33px;
+    float: left;
+}
+.boyswaddrobe
+{
+    position: relative;
+    top: -215px;
+    right: -494px;
+    float: left;
+}       
+   .grid-container2 {
+    height: 500px;
+    width: 450px;
+    margin-top: -154px;
+    margin-left:92px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px ;
+    grid-template-rows: 100px 100px;
+    gap: 20px 15px;
+    float: left;
+   
+  }
+  .girlswadrobe
+  {
+    position: relative;
+    top: -6px;
+    right: 964px;
+    float: left;
+  }
+  .grid-container3 {
+    height: 500px;
+    width: 450px;
+    margin-top: -300px;
+    margin-left: 76px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px ;
+    grid-template-rows: 100px 100px; 
+    gap: 20px 15px;
+
+    float: left;
+   
+  }
+  
+  .summersavings 
+  {position: relative;
+    top: -421px;
+    right: -446px;
+    float: left;
+   
+  }
+  .offers
+  {margin-top: -367px;
+    
+    width: 450px;
+    height: 800px;
+float: left;
+
+  }
+ .promise
+ {float: left;
+  margin-top: -216px;
+  margin-left: 77px;
+}
+
+ 
+ .freeshipping
+ {
+  margin-top: -182px;
+  margin-left: 55px;
+  float: left;
+ }
+ .megasaving
+ {
+  margin-top: -402px;
+    margin-left: 500px;
+  float: left;
+ }
+ .off-grid-sixty{
+  float: left;
+  height: 45px;
+  width: 450px;
+  display: grid;
+  grid-template-columns: 120px 120px 120px ;
+
+  gap:0;
+  
+  margin-top: -361px;
+  margin-left: 540px;
+ }
+ .off-grid-seventy{
+  float: left;
+  height: 45px;
+  width: 450px;
+  display: grid;
+  grid-template-columns: 120px 120px 120px ;
+
+  gap:0;
+  
+  margin-top: -191px;
+  margin-left: 540px;
+ }
+ .off-grid-eighty{
+  float: left;
+  height: 45px;
+  width: 450px;
+  display: grid;
+  grid-template-columns: 120px 120px 120px ;
+
+  gap:0;
+  
+  margin-top: -20px;
+  margin-left: 540px;
+ }
+ .multipack-store-img {
+  height: 514px;
+  width: 500px;
+  margin-top: 27px;
+  margin-left: -416px;
+  display: grid;
+  grid-template-columns: 190px 190px;
+  grid-template-rows: 160px 160px;
+  gap: 10px 10px;
+  float: left;
+}
+.multipackstore
+{float: left;
+  margin-top: -45px;
+    margin-left: 56px;
+    
+}
+.birthday
+{
+  margin-top: 170px;
+    margin-left: -41px;
+    float: left;;
+}
+.birthday-img {
+  height: 514px;
+  width: 500px;
+  margin-top: 240px;
+  margin-left: -444px;
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  gap: 10px 10px;
+  float: left;
+}
+.babystore
+{
+  margin-top: 170px;
+    margin-left: -41px;
+    float: left;;
+}
+.baby
+{
+  margin-top: 170px;
+    margin-left: -41px;
+    float: left;;
+}
+.view
+{
+  margin-top: 170px;
+    margin-left: -41px;
+    float: left;;
+}
+.shop-by-occasion
+{
+  margin-top: -380px;
+    margin-left: -73px;
+    float: left;
+
+}
+.shop-by-occasion-img{
+  height: 400px;
+  width: 350px;
+  margin-top: -326px;
+  margin-left: -75px;
+  display: grid;
+  grid-template-columns: 220px 220px;
+  grid-template-rows: 240px 240px;
+  gap: 10px 10px;
+  float: left;
+  border-radius: 7px;
+}
+.babystorehead
+{
+  margin-top: 139px;
+  margin-left: -73px;
+  float: left;
+  }
+  .babystore
+{
+  margin-top: 2px;
+    margin-left: -41px;
+    float: left;
+
+  }
+  .view
+{
+  margin-top: 139px;
+  margin-left: -73px;
+  float: left;
+  }
+  .moments
+{
+  margin-top: -374px;
+    margin-left: 46px;
+    float: left;
+  }
+  .moments-img {
+    margin-top: -319px;
+    margin-right: 200px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 110px 110px 110px 110px;
+    grid-template-rows: 100px 100px;
+    gap: 10px 10px;
+    float: left;
+}
+.giftandglasses
+{margin-top: -319px;
+  margin-left: 485px;
+  float: left;
+
+}
+.giftandglasses-img
+{
+  margin-top: -260px;
+  margin-right: 200px;
+  padding-left: 582px;
+  display: grid;
+  grid-template-columns: 110px 110px 110px;
+  grid-template-rows: 100px 100px;
+  gap: 10px 10px;
+  float: left;
+}
+.explore
+{margin-top: 6px;
+  margin-left: 995px;
+  float: left;
+
+}
+
+
+.explore-img
+{
+  margin-top: 3px;
+    margin-right: 204px;
+    padding-left: 1037px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 100px 100px;
+    gap: 10px 10px;
+ 
+
+}
+.search-footer
+{
+  height: 120px;
+ 
+  background-color: white;
+ 
+  border-top: 1px solid rgb(214, 211, 211);
+    border-bottom: 1px solid rgb(214, 211, 211);
+}
+.searches{
+  font-weight: bold;
+  color: #333;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20px;
+  padding: 20px;
+}
+.searchlinks
+{
+  margin-top: -20px;
+  margin-left: 38px;
+} 
+.searchlinks a{
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #777;
+    font-size: 14px;
+    line-height: 23px;
+    cursor: pointer;
+}
+.service-footer
+{float: left;
+  height: 240px;
+  width: 100%;
+  border-bottom: 1px solid rgb(214, 211, 211);
+ /* background-color: #ed54a4;*/
+}
+.help
+{
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+  height: 150px;
+  width: 22%;
+  background-color:white;
+  transition: background-color 0.3s ease;
+ 
+}
+.help:hover
+
+{
+  background-color:#f1eded;
+}
+.help i{
+  position: relative;
+    top: 33px;
+    margin-top: 5px;
+    margin-left: 135px;
+}
+.help p{
+  font-size: 13px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 104px;
+    margin-top: 42px;
+
+}
+.help a{
+  font-size: 12px;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 53px;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+    line-height: 16px;
+    color: #707070;
+    
+}
+.help a:hover
+
+{
+    color: #ed54a4;
+    
+}
+
+.support
+{
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+  height: 150px;
+  width: 22%;
+  background-color:white;
+  transition: background-color 0.3s ease;
+ 
+}
+.support:hover
+
+{
+  background-color:#f1eded;
+}
+.support i{
+  position: relative;
+    top: 33px;
+    margin-top: 5px;
+    margin-left: 135px;
+}
+.support p{
+  font-size: 13px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 104px;
+    margin-top: 42px;
+
+}
+.support a{
+  font-size: 12px;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 84px;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+    line-height: 16px;
+    color: #707070;
+    
+}
+.support a:hover
+
+{
+    color: #ed54a4;
+    
+}
+.download img{
+  position: relative;
+  top: 33px;
+  
+  margin-left: 135px;
+}
+
+.download p{
+  font-size: 13px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 1px;
+    margin-top: 42px;
+    position: relative;
+    left: 82px;
+
+}
+.dwn1 a{
+  font-size: 18px;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 110px;
+  margin-top: -4px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+    line-height: 16px;
+    color: #707070;
+    float: left;
+}
+.dwn1 a:hover
+
+{
+    color: #ed54a4;
+    
+}
+.dwn2 a{
+  font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 36px;
+    margin-top: -4px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    line-height: 16px;
+    color: #707070;
+    float: left;
+    
+}
+.dwn2 a:hover
+
+{
+    color: #ed54a4;
+    
+}
+.download
+{
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+  height: 150px;
+  width: 22%;
+  background-color:white;
+  transition: background-color 0.3s ease;
+ 
+}
+.download:hover
+
+{
+  background-color:#f1eded;
+}
+.connect
+{
+  float: left;
+  margin-top: 30px;
+  margin-left: 40px;
+  height: 150px;
+  width: 22%;
+  background-color:white;
+  transition: background-color 0.3s ease;
+ 
+}
+.connect:hover
+
+{
+  background-color:#f1eded;
+}
+.connect i{
+  position: relative;
+    top: 33px;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+.connect p{
+  font-size: 13px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 104px;
+    margin-top: 42px;
+
+}
+
+/*.facebook i{
+ 
+ 
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 36px;
+  margin-top: -4px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 16px;
+  color: #707070;
+  float: left;
+  
+}
+.facebook i:hover
+
+{
+  color: #ed54a4;
+  
+}
+.twitter i{
+  float: left;
+font-size: 12px;
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+margin-left: 53px;
+margin-top: 30px;
+text-decoration: none;
+transition: color 0.3s ease;
+  line-height: 16px;
+  color: #707070;
+  
+}
+.twitter i:hover
+
+{
+  color: #ed54a4;
+  
+}
+.instagram i {
+  float: left;
+font-size: 12px;
+
+
+font-weight: bold;
+display: inline;
+margin-left: 53px;
+margin-top: 30px;
+text-decoration: none;
+transition: color 0.3s ease;
+  line-height: 16px;
+  color: #707070;
+  
+}
+.instagram i :hover
+
+{
+  color: #ed54a4;
+  
+}
+.pintrest i{
+  float: left;
+ 
+font-size: 12px;
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+margin-left: 53px;
+margin-top: 30px;
+text-decoration: none;
+transition: color 0.3s ease;
+  line-height: 16px;
+  color: #707070;
+  
+}
+.pintrest i:hover
+
+{
+  color: #ed54a4;
+  
+}*/
+.social-links
+{
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Align icons to the center */
+  display: flex;
+  justify-content: center;
+  margin-top: -34px;
+}
+.social-links i {
+  margin: 0; 
+  padding: 7px; /* Remove padding */
+  font-size: 19px;
+  transition: color 0.3s ease;
+  color: #707070;
+}
+.social-links i:hover
+{
+  color: #ed54a4;
+}
+.small-hopscotch
+{
+  margin-top: 6px;
+  margin-left: 45px;
+  float: left;
+}
+.ftr-left a
+{float: left;
+  display: flex;
+  margin-top: 4px;
+  position: relative;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  top: 20px;
+  margin-left: 20px;
+  color: rgb(112, 112, 112);
+}
+.ftr-right{
+  float: left;
+  display: flex;
+  margin-top: 4px;
+  position: relative;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  top: 20px;
+  margin-left:720px;
+  color: rgb(112, 112, 112);
+}
